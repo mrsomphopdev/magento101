@@ -1,0 +1,37 @@
+{
+    "name": "mozgbrasil/heroku-magento",
+    "description": "Magento App",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": [
+        "proprietary"
+    ],
+    "authors": [
+        {
+            "name": "Marcio dos Santos Amorim",
+            "email": "suporte@mozg.com.br",
+            "homepage": "http://mozg.com.br",
+            "role": "Developer"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https?://packages.firegento.com"
+        }
+    ],
+    "extra":{
+        "magento-root-dir":"magento",
+        "magento-deploystrategy": "copy",
+        "magento-force": true
+    },
+    "require": {
+        "php": "^5.5.12",
+        "magento-hackathon/magento-composer-installer": "~3.0",
+        "aydin-hassan/magento-core-composer-installer": "~1.2",
+        "firegento/magento": "~1.9.3.1",
+        "aoepeople/aoe_scheduler": "^1.5",
+        "aschroder/smtp_pro": "^2.0",
+        "mozgbrasil/magento-bundle-php_56": "dev-master"
+    }
+}
